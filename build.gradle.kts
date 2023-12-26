@@ -1,7 +1,7 @@
 plugins {
     id("gradlebuild.build-environment")
     id("gradlebuild.root-build")
-
+    id("org.sonarqube") version "3.5.0.2730"
     id("gradlebuild.teamcity-import-test-data")  // CI: Import Test tasks' JUnit XML if they're UP-TO-DATE or FROM-CACHE
     id("gradlebuild.lifecycle")                  // CI: Add lifecycle tasks to for the CI pipeline (currently needs to be applied early as it might modify global properties)
     id("gradlebuild.generate-subprojects-info")  // CI: Generate subprojects information for the CI testing pipeline fan out
